@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cameraImage"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/drop_image_2"/>
+
+    <Button
+        android:id="@+id/openCamera"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/cameraImage"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="30dp"
+        android:text="Open Camera"/>
+
+    <Button
+        android:id="@+id/openGalery"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/cameraImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Open Galery"/>
+
+    <Button
+        android:id="@+id/clickMe"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/openGalery"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Click Me"/>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openGalery"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Result"/>
+
+    <TextView
+        android:id="@+id/Image"
+        android:layout_width="400dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/openGalery"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/drop_image"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
